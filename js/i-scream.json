@@ -3,7 +3,7 @@
     "headOffice": "North Pole",
     "established": 2024,
     "active": true,
-    "topFlavours": [ {
+    "topFlavors": [ {
         "name": "Chocolate Mint",
         "calories": 200,
         "type": "ice-cream",
