@@ -40,18 +40,43 @@ function populateHeader(jsonData){
 }
 /* STEP 10b: Assemble the showTopFlavors() function */
 
-// STEP 10c: Bind the JSON topFlavors object to a var
+function showTopFlavors(jsonData){
+    // STEP 10c: Bind the JSON topFlavors object to a var
+    const topFlavors = jsonData.topFlavors;
+    // STEP 10d: Loop through the topFlavors object
+    for (let i = 0; i < topFlavors.length; i++){
+        console.log(topFlavors[i]);
+        // STEP 10e: build HTML elements for the content: article, h2, image, p1, p2, list
+        const article = document.createElement("article");  // <article></article>
+        // STEP 10f: Set the textContent property for each of the above elements (except the UL), based on the JSON content
+        const h2 = document.createElement("h2"); // <h2></h2>
+        const p1 = document.createElement("p"); // <p></p>
+        const p2 = document.createElement("p"); // <p></p>
+        const img = document.createElement("img"); // <img>
+        const ul = document.createElement("ul"); // <ul></ul>
+        h2.textContent = topFlavors[i].name;
+        p1.textContent = "Calories: " + topFlavors[i].calories;
+        p2.textContent = "Type: " + topFlavors[i].type;
+        img.setAttribute("src", topFlavors[i].image);
+        // STEP 10g: Build a loop for the ingredients array in the JSON
+        const ingredients = topFlavors[i].ingredients;
+        for (let j = 0; j < ingredients.length; j++){
+            console.log(ingredients[j]);
+            const listItem = document.createElement("li"); // <li></li>
+            listItem.textContent = ingredients[j];
+            ul.appendChild(listItem);
+        }
 
 
-// STEP 10d: Loop through the topFlavors object
-
-// STEP 10e: build HTML elements for the content: article, h2, image, p1, p2, list
-
-// STEP 10f: Set the textContent property for each of the above elements (except the UL), based on the JSON content
-
-// STEP 10g: Build a loop for the ingredients array in the JSON
-
-// STEP 10i: Append each complete ARTICLE element to the SECTION element
+     // STEP 10i: Append each complete ARTICLE element to the SECTION element
+     article.appendChild(h2);
+     article.appendChild(p1);
+     article.appendChild(p2);
+     article.appendChild(ul);
+     article.appendChild(img);
+     section.appendChild(article);
+ }
+}
 
 
 // STEP 11: Add a 3rd flavour of ice cream to the local JSON file, making use of the /images/strawberry-sprinkle.svg image
