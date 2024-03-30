@@ -19,6 +19,36 @@
         "Mango Chunks", 
         "Vanilla Base"],
         "image": "https://arsh200553841.github.io/24W-JavaScript-03-Week11-main/images/peach-mango.svg" 
-    }]
+    },
+    {
+        "name": "strawberry-sprinkle",
+        "calories": 300,
+        "type": "milkshake-type sprinkle",
+        "ingredients": ["Strawberry Sprinkles", 
+        "Strawberry Syrup",
+        "Vanilla Base"],
+        "image": "https://arsh200553841.github.io/24W-JavaScript-03-Week11-main/images/strawberry-sprinkle.svg"
+    },
+    {
+        "name": "pineapple-sprinkle",
+        "calories": 400,
+        "type": "milkshake-type sprinkle",
+        "ingredients": ["Pineapple Sprinkles", 
+        "Pineapple Syrup",
+        "Vanilla Base"],
+        "image": "https://arsh200553841.github.io/24W-JavaScript-03-Week11-main/images/ice-cream-xtra1.svg"
+    },
+    {
+        "name": "Chocochip-sprinkle",
+        "calories": 500,
+        "type": "milkshake-type sprinkle",
+        "ingredients": ["Chocochip Sprinkles", 
+        "Chocochip Syrup",
+        "Vanilla Base"],
+        "image": "https://arsh200553841.github.io/24W-JavaScript-03-Week11-main/images/ice-cream-xtra2.svg"
+    }
+
+
+]
 
 }
